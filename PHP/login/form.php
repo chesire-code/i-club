@@ -29,3 +29,5 @@ $is_leap_year = ((($year % 4) == 0) && ((($year % 100) != 0) || (($year %400) ==
 
 header('Location: '.($valid_login ? '/members/index.php' : 'login.php?errors=1')); exit();
 */
+
+($_SERVER["REQUEST_METHOD"] == "POST") ? /*error()*/ null : null;
