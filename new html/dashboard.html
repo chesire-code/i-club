@@ -1,0 +1,316 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+    <link rel="stylesheet" href="bootstrap.css">
+    <link rel="stylesheet" href="fontawesome.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@500&display=swap" rel="stylesheet">
+    <link rel="stylesheet"
+        href="https://maxst.icons8.com/vue-static/landings/line-awesome/font-awesome-line-awesome/css/all.min.css">
+    <link rel="stylesheet"
+        href="https://maxst.icons8.com/vue-static/landings/line-awesome/line-awesome/1.3.0/css/line-awesome.min.css">
+    <link rel="stylesheet" href="styling.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</head>
+
+<body>
+
+    <input type="checkbox" id="nav-toggle">
+    <div class="sidebar">
+        <div class="sidebar-brand">
+            <h2><i class="las la-piggy-bank" style="font-size: 50px;"></i><span
+                    style="font-size: 50px; overflow: hide;"></span><span>Account</span></h2>
+        </div>
+
+        <div class="sidebar-menu">
+            <ul>
+                <li>
+                    <a href="dashboard" class="active"><span class="las la-clipboard"></span><span>Dashboard</span></a>
+                </li>
+                <li>
+                    <a href="members.html"><span class="las la-user-circle"></span><span>Members</span></a>
+                </li>
+                <li>
+                    <a href="notifications.html"><span
+                            class="fas fa-project-diagram"></span><span>Notifications</span></a>
+                </li>
+                <li>
+                    <a href="events.html"><span class="las la-calendar"></span><span>Events</span></a>
+                </li>
+                <li>
+                    <a href="settings.html"><span class="las la-cog"></span><span>Account settings</span></a>
+                </li>
+
+            </ul>
+        </div>
+    </div>
+
+    <div class="main-content">
+        <header>
+            <h3>
+                <label for="nav-toggle">
+                    <span class="las la-bars" style="cursor: pointer;"></span>
+                </label>
+
+                <span id="page-name">Dashboard</span>
+            </h3>
+
+            <div class="search-wrapper">
+                <input type="search" placeholder="search">
+                <span class="las la-search"></span>
+            </div>
+
+            <div class="user-wrapper">
+                <div>
+                    <h5 style="font-weight: bold;">club name</h5>
+                    <small style="font-size: 19px;">school</small>
+                </div>
+            </div>
+        </header>
+
+        <main>
+            <div class="cards mb-3">
+                <div class="card-single">
+                    <div>
+                        <h3>3</h3>
+                        <span>Projects this term &nbsp </span>
+                    </div>
+                    <div>
+                        <span class="fas fa-tasks"></span>
+                    </div>
+                </div>
+
+                <div class="card-single">
+                    <div>
+                        <h3>Sh. 10k </h3>
+                        <span>Total amount gotten&nbsp </span>
+                    </div>
+                    <div>
+                        <span class="fas fa-money-check-alt"></span>
+                    </div>
+                </div>
+
+                <div class="card-single">
+                    <div>
+                        <h3>Sh. 20k</h3>
+                        <span style="color: white;">club Balance &nbsp </span>
+                    </div>
+                    <div>
+                        <span class="fas fa-wallet"></span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="recent-grid">
+                <div class="projects">
+                    <div class="card">
+                        <div class="card-header">
+                            <h4>Recent projects</h4>
+                            <a href="events.html"><button>see all <span class="las la-arrow-right"></span></button></a>
+                        </div>
+
+                        <div class="card-body">
+                            <div class="table-responsive">
+                                <table width="100%">
+                                    <thead>
+                                        <tr>
+                                            <td>Project Title</td>
+                                            <td>Status</td>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        <tr>
+                                            <td>project 1</td>
+                                            <td>
+                                                <span class="status done">done</span>
+                                            </td>
+                                            <td>
+                                                <button type="button" class="btn btn-primary" data-toggle="modal"
+                                                    data-target="#projectModal">more</button>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td>project 2</td>
+                                            <td>
+                                                <span class="status done">done</span>
+                                            </td>
+                                            <td>
+                                                <button type="button" class="btn btn-primary" data-toggle="modal"
+                                                    data-target="#projectModal">more</button>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td>project 3</td>
+                                            <td>
+                                                <span class="status done">done</span>
+                                            </td>
+                                            <td>
+                                                <button type="button" class="btn btn-primary" data-toggle="modal"
+                                                    data-target="#projectModal">more</button>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td>project 4</td>
+                                            <td>
+                                                <span class="status done">done</span>
+                                            </td>
+                                            <td>
+                                                <button type="button" class="btn btn-primary" data-toggle="modal"
+                                                    data-target="#projectModal">more</button>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td>project 5</td>
+                                            <td><span class="status done">done</span></td>
+                                            <td>
+                                                <button type="button" class="btn btn-primary" data-toggle="modal"
+                                                    data-target="#projectModal">more</button>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td>project 6</td>
+                                            <td>
+                                                <span class="status done">done</span>
+                                            </td>
+                                            <td><button type="button" class="btn btn-primary" data-toggle="modal"
+                                                    data-target="#projectModal">more</button></td>
+                                        </tr>
+
+                                        <!-- Modal -->
+                                        <div class="modal fade" id="notificationModal" tabindex="-1" role="dialog"
+                                            aria-labelledby="exampleModalLabel" aria-hidden="true">
+                                            <div class="modal-dialog" role="document">
+                                                <div class="modal-content">
+                                                    <div class="modal-header">
+                                                        <h5 class="modal-title" id="exampleModalLabel">Modal title</h5>
+                                                        <button type="button" class="close" data-dismiss="modal"
+                                                            aria-label="Close">
+                                                            <span aria-hidden="true">&times;</span>
+                                                        </button>
+                                                    </div>
+                                                    <div class="modal-body">
+                                                        This is where the notification content will appear. It will
+                                                        contain all the needed content of the notification like venue,
+                                                        date and max example:<br>
+                                                        date:<br>
+                                                        venue:<br>
+                                                        maximum no. of members to participate<br>
+                                                    </div>
+                                                    <div class="modal-footer">
+                                                        <button type="button" class="btn btn-secondary"
+                                                            data-dismiss="modal">Close</button>
+                                                        <button type="button" class="btn btn-primary">Save
+                                                            changes</button>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                        <div class="modal fade" id="projectModal" tabindex="-1" role="dialog"
+                                            aria-labelledby="exampleModalLabel" aria-hidden="true">
+                                            <div class="modal-dialog" role="document">
+                                                <div class="modal-content">
+                                                    <div class="modal-header">
+                                                        <h5 class="modal-title" id="exampleModalLabel">Modal title</h5>
+                                                        <button type="button" class="close" data-dismiss="modal"
+                                                            aria-label="Close">
+                                                            <span aria-hidden="true">&times;</span>
+                                                        </button>
+                                                    </div>
+                                                    <div class="modal-body">
+                                                        This is where the project content will appear. It will
+                                                        contain all the content of the project
+                                                        <br>
+                                                    </div>
+                                                    <div class="modal-footer">
+                                                        <button type="button" class="btn btn-secondary"
+                                                            data-dismiss="modal">Close</button>
+                                                        <button type="button" class="btn btn-primary"
+                                                            data-dismiss="modal">
+                                                            ok</button>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                    </tbody>
+                                </table>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="notifications">
+                    <div class="card">
+                        <div class="card-header">
+                            <h5 style="font-weight: bolder; margin-right: 6.5px;"><span class="las la-bell"
+                                    style="font-size: 30px; font-weight: bold;"></span>Notifications</h5>
+                            <a href="notifications.html"><button>see all <span
+                                        class="las la-arrow-right"></span></button></a>
+                        </div>
+
+                        <div class="card-body">
+
+                            <div class="notification">
+                                <div class="notification-header">
+                                    <h6>New invite</h6>
+                                    <small>Alliance High School</small>
+                                </div>
+
+                                <div class="more-button">
+                                    <button type="button" class="btn btn-primary" data-toggle="modal"
+                                        data-target="#notificationModal">more</button>
+                                </div>
+                            </div>
+
+                            <div class="notification">
+                                <div>
+                                    <h6>Invite accepted</h6>
+                                    <small>school</small>
+                                </div>
+
+                                <div>
+                                    <button type="button" class="btn btn-primary" data-toggle="modal"
+                                        data-target="#projectModal">more</button>
+                                </div>
+                            </div>
+
+                            <div class="notification">
+                                <div>
+                                    <h6>Invite declined</h6>
+                                    <small>school</small>
+                                </div>
+
+                                <div>
+                                    <button type="button" class="btn btn-primary" data-toggle="modal"
+                                        data-target="#projectModal">more</button>
+                                </div>
+                            </div>
+
+                            <div class="notification">
+                                <div>
+                                    <h6>New member</h6>
+                                    <small>name</small>
+                                </div>
+
+                                <div>
+                                    <button type="button" class="btn btn-primary" data-toggle="modal"
+                                        data-target="#projectModal">more</button>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+        </main>
+    </div>
+</body>
+
+</html>
