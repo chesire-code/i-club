@@ -1,9 +1,4 @@
 <?php
-# @author : Briomar
-# contact : kapolonbraine@briomar.co.ke
-# website : https://briomar.co.ke
-?>
-<?php
 
 trait Database_connection_key
 {

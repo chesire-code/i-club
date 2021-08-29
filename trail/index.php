@@ -14,6 +14,7 @@
     <link rel="stylesheet" href="includes\bootstrap\bootstrap.min.css">
     <script src="includes\bootstrap\jQuery.js"></script>
     <script src="includes\bootstrap\bootstrap.min.js"></script>
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
 </head>
 
 <body>

@@ -1,9 +1,4 @@
 <?php
-# @author : Briomar
-# contact : kapolonbraine@briomar.co.ke
-# website : https://briomar.co.ke
-?>
-<?php
 
 if (isset($_POST["submit"])) {
     require("includes/control.inc.php"); #Deals with revealing DB data to user
