@@ -432,92 +432,102 @@
 				font-weight: 1200;
 			}
 
+			#dropdownMenuButton{
+				margin-left: 70%;
+			
+			}
+
 			.soon-event{
 				width: 1200px;
 				height: 500px;
 				overflow: scroll;
 				margin-left: 20px;
-				border: 1px solid rgba(78, 112, 135, 0.644);
+				border: 1px solid green;
 				border-radius: 22px;
+				border-top-left-radius: -10px;
 				margin-bottom: 50px;
 				margin-left: 50px;
+				position: relative;
+				top: -31px;
+				z-index: 1;
+			
+			}
+
+			.all-events{
+				border: 1px solid green;
+								position: relative;
+				top: -31px;
+				z-index: 1;
 			}
 
 			.soon-header,
-			.recent-header{
-				background: rgba(65, 95, 116, 0.644);
+			.all-header{
 				height: 30px;
 				border-radius: 20px;
 				width: 200px;
-				position: fixed;
-				background-position: fixed;
+				margin-left: 50px;
+					background: green;
 			 }
 
 			 .soon-header p,
-			 .recent-header p{
+			 .all-header p{
 				 font-size: 20px;
 				 font-family: Arial;
 				 font-weight: bold;
 				 color: white;
 				 margin-left: 10px;
 				 height: 30px;
+				 position: relative;
 			 }
 
-			 .recent-event .toast-header p,
-			 .soon-body .toast-header p{
-				font-size: 20px;
-				font-weight: 400;
-				font-family: arial;
-			 }
 			 .all-events{
 				width: 77%;
 				height: 400px;
 				overflow: scroll;
-				border: 1px solid rgba(99, 114, 95, 0.781);
+				border: 1px solid green;
 				margin-left: 20px;
 				border-radius: 20px;
 				margin-left: 50px;
 			 }
 
-			 .soon-body .toast,
-			 .recent-body .toast{
-				margin-bottom: 5px;
-				border: 1px solid rgba(107, 105, 105, 0.116);
-				height: 50px;
-			 }
-
-			 .soon-body .toast p{
-				 font-size: 18px;
-				 font-weight: 350;
-			 }
-
 			 .event-body{
 				 width: 600px;
-				 height: 120px;
-				 border: 1px solid rgba(99, 110, 99, 0.171);
+				 height: 90px;
+				 border-bottom: 1px solid rgba(99, 110, 99, 0.171);
 				 outline: none;
 				 margin: 15px;
+				 cursor: pointer;
 				 margin-left: 30px;
 				 border-radius: 10px;
 				 color: rgb(31, 41, 31);
 				 font-size: 16px;
-				transition-property: width ,height, font-size;
+				 z-index: 0;
+				transition-property: font-size;
 				transition-duration: 0.5s;
 				transition-delay: 0.3s;
 			 }
 
+			 .event-body h4{
+				  margin-left: 30px;
+				 margin-bottom: 2px !important;
+			 }
+
 			 .date-host{
-				font-size: large;
-				 margin-left: 30px;
+				font-size: medium;
+				height: 20px;
+				 margin-left: 50px;
 				 color: rgba(255, 255, 255, 0);
-				 font-family: arial;
+				 font-family: 'poppins', sans serif;
 			 }
 			 .date-host:hover{
 				 color: rgba(48, 47, 47, 0.822);
 			 }
+
+			 .date-host p{
+				 margin-bottom: 0px !important;
+			 }
 			 .event-body:hover{
-				 width: 630px;
-				 height: 120px;
+
 				 font-size: 23px;
 			 }
 
