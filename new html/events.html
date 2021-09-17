@@ -5,21 +5,17 @@
         <meta charset="utf-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
         <link rel="stylesheet" href="bootstrap.css">
-        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
-            integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
-            crossorigin="anonymous"></script>
-        <link href="thestyle.css" rel="stylesheet" />
-        <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css"
-            integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p"
-            crossorigin="anonymous" />
+        <link rel="stylesheet" href="fontawesome.css">
         <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-        <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@500&display=swap" rel="stylesheet">
-        <link rel="stylesheet"
+        <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@500&display=swap" rel="stylesheet"
             href="https://maxst.icons8.com/vue-static/landings/line-awesome/font-awesome-line-awesome/css/all.min.css">
         <link rel="stylesheet"
             href="https://maxst.icons8.com/vue-static/landings/line-awesome/line-awesome/1.3.0/css/line-awesome.min.css">
         <link rel="stylesheet" href="styling.css">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
 
     </head>
 
@@ -122,14 +118,16 @@
                 </div>
             </main>
 
-            <div class="dropdown">
-                <button class="btn btn-info dropdown-toggle" type="button" id="dropdownMenuButton"
-                    data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">new event</button>
+            <div class="dropdown show" style="margin-left: 40px;">
+                <button class="btn btn-info dropdown-toggle" type="button" href="#" role="button" id="dropdownMenuLink"
+                    data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">new
+                    event</button>
 
-                </button>
-                <div class="dropdown-menu  bg-light" aria-labelledby="dropdownMenuButton">
-                    <a class="nav-link text-dark bg-light" href="">your own internal event</a>
-                    <a class="nav-link text-dark bg-light" href="">host an event with other school</a>
+                <div class="dropdown-menu" aria-labelledby="dropdownMenuLink">
+                    <a class="dropdown-item" style="margin: 10px;" href="#">your own internal event</a>
+                    <a class="dropdown-item" style="margin: 10px;"
+                        href="https://docs.google.com/forms/d/e/1FAIpQLScum6tnxxYw2pLvl6Dc4mH8KnvosIDhcdmeLK7WoBd20XPKaA/viewform?vc=0&c=0&w=1&flr=0&usp=mail_form_link">host
+                        an event with other school</a>
                 </div>
             </div>
             <br>
