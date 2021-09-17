@@ -47,7 +47,7 @@ function club_exist($club_email){
   $result = $connection_key->query($sql);
   if($result->num_rows>0){
     while($row = $result->fetch_assoc()){
-      if($club_email == $row["email"]){
+      if($club_email == $row["club_email"]){
         $club_exists = true;
       } else{
         $club_exists = false;
