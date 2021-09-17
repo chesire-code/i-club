@@ -412,6 +412,25 @@ select.form-control:not([size]):not([multiple]) {
     padding: 0 7px;
 }
 
+a{
+    margin: 5px;
+}
+a:hover{
+    background-color: rgb(252, 252, 252);
+    color: rgb(14, 14, 231);
+   
+    
+}
+
+#link:hover{
+    background: none;
+    
+}
+
+p{
+    font-size: large;
+    margin: 15px;
+}
 
 .timeline {
     list-style-type: none;
