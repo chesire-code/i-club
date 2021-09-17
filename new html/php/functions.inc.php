@@ -6,7 +6,7 @@
 */
 
 function check_db_connection($server_name, $user_name,$pass_word, $db_name){
-    $connection_key = new mysqli($server_name, $user_name,$pass_word, $db_name);
+    global $connection_key = new mysqli($server_name, $user_name,$pass_word, $db_name);
     # Check Connection
     if ($connection_key->connect_error) {
         $connection_error = true;
