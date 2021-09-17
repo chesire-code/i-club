@@ -492,7 +492,7 @@
 
 			 .event-body{
 				 width: 600px;
-				 height: 90px;
+				 height: 110px;
 				 border-bottom: 1px solid rgba(99, 110, 99, 0.171);
 				 outline: none;
 				 margin: 15px;
@@ -513,7 +513,7 @@
 			 }
 
 			 .date-host{
-				font-size: medium;
+				font-size: large;
 				height: 20px;
 				 margin-left: 50px;
 				 color: rgba(255, 255, 255, 0);
@@ -524,7 +524,8 @@
 			 }
 
 			 .date-host p{
-				 margin-bottom: 0px !important;
+				 margin-top: 5px !important;
+				 margin-bottom: 5px !important;
 			 }
 			 .event-body:hover{
 
