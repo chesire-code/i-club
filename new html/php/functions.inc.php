@@ -12,7 +12,7 @@ function check_db_connection($server_name, $user_name,$pass_word, $db_name){
         $connection_error = true;
         $connection_key_error = $connection_key->connect_error;
     } else{
-        $connection_error = "false";
+        $connection_error = false;
     }
     return $connection_error;
 }
