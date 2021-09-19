@@ -10,9 +10,9 @@
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+
 </head>
 </head>
 <body>
@@ -28,7 +28,7 @@
               <p>Alliance High School</p>
               <br>
               <br>
-              <button type="button" class="btn btn-success btn-outline-success">Join a Club</button>
+              <button type="button" class="btn btn-success btn-outline-success" data-toggle="modal" data-target="#joinModal">Join a Club</button>
               <div class="d-flex justify-content-center align-items-center mt-4" id="stats">
                 <div class="stats">
                     <h4 class="mb-0">Events</h4> <span>10</span>
@@ -57,9 +57,6 @@
           <footer class="panel-footer">
               <button class="btn btn-success pull-right">Post</button>
               <ul class="nav nav-pills">
-                  <li>
-                      <a href="#"><i class="fa fa-map-marker"></i></a>
-                  </li>
                   <li>
                       <a href="#"><i class="fa fa-camera"></i></a>
                   </li>
@@ -110,7 +107,7 @@
               </div>
 
               <div class="col-md-6">
-                <div class="panel">
+                <div class="panel" data-toggle="modal" data-target="#eventModal">
                     <div class="panel-body">
                         
                         <div class="bio-desk">
@@ -175,18 +172,139 @@
       </div>
   </div>
 
+  <div class="modal fade" id="joinModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
+      aria-hidden="true">
+      <div class="modal-dialog" role="document">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="ModalLabel">enter name of club</h5>
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+              <span aria-hidden="true">&times;</span>
+            </button>
+          </div>
+          <div class="modal-body">
+            <select id="select" class="form-control">
+                
+                <option>club</option>
+                <option>ICT club</option>
+                <option>maths club</option>
+                <option>history club</option>
+                <option>club name</option>
+                <option>club name</option>
+                <option>club name</option>
+                <option>club name</option>
+                <option>club name</option>
+                <option>club name</option>
+                <option>club name</option>
+            </select>
+            <br>
+            <br>
+            <button class="btn btn-primary">submit</button>
+          </div>
+          <div class="modal-footer">
+          </div>
+        </div>
+      </div>
+    </div>
+
+    
+
   <div class="modal fade" id="notificationModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
     <div class="modal-dialog" role="document">
       <div class="modal-content">
         <div class="modal-header">
-          <h5 class="modal-title" id="exampleModalLabel">Modal title</h5>
+          <h5 class="modal-title" id="exampleModalLabel">Notifications</h5>
           <button type="button" class="close" data-dismiss="modal" aria-label="Close">
             <span aria-hidden="true">&times;</span>
           </button>
         </div>
         <div class="modal-body">
-            
+            <div class="mytoast" role="alert" aria-live="assertive" aria-atomic="true">
+                <div class="mytoast-header" >
+                    <p>sender</p>
+                   
+                </div>
+
+                <div class="mytoast-body">
+                    <p>you have been invited to take part in the chess competition that will take part on date. venue will be at venue
+                    </p>
+                    <button class="btn btn-success" data-toggle="modal" data-target="#contributionModal">contribute</button>
+                </div>
+            </div>
+
+            <div class="mytoast" role="alert" aria-live="assertive" aria-atomic="true">
+                <div class="mytoast-header">
+                    <p>sender</p>
+                </div>
+
+                <div class="mytoast-body">
+                    <p>you have been invited to take part in the chess competition that will take part on date. venue will be at venue
+                    </p>
+                    <button class="btn btn-success">contribute</button>
+                </div>
+            </div>
+
+            <div class="mytoast" role="alert" aria-live="assertive" aria-atomic="true">
+                <div class="mytoast-header">
+                    <p>sender</p>
+                </div>
+
+                <div class="mytoast-body">
+                    <p>you have been invited to take part in the chess competition that will take part on date. venue will be at venue
+                    </p>
+                    <button class="btn btn-success">contribute</button>
+                </div>
+            </div>
+
+            <div class="mytoast" role="alert" aria-live="assertive" aria-atomic="true">
+                <div class="mytoast-header">
+                    <p>sender</p>
+                </div>
+
+                <div class="mytoast-body">
+                    <p>you have been invited to take part in the chess competition that will take part on date. venue will be at venue
+                    </p>
+                    <button class="btn btn-success">contribute</button>
+                </div>
+            </div>
+
+            <div class="mytoast" role="alert" aria-live="assertive" aria-atomic="true">
+                <div class="mytoast-header">
+                    <p>sender</p>
+                </div>
+
+                <div class="mytoast-body">
+                    <p>you have been invited to take part in the chess competition that will take part on date. venue will be at venue
+                    </p>
+                    <button class="btn btn-success">contribute</button>
+                </div>
+            </div>
+            <div class="mytoast" role="alert" aria-live="assertive" aria-atomic="true">
+                <div class="mytoast-header">
+                    <p>sender</p>
+                </div>
+
+                <div class="mytoast-body">
+                    <p>you have been invited to take part in the chess competition that will take part on date. venue will be at venue
+                    </p>
+                    <button class="btn btn-success">contribute</button>
+                </div>
+            </div>
+
+            <div class="mytoast" role="alert" aria-live="assertive" aria-atomic="true">
+                <div class="mytoast-header">
+                    <p>sender</p>
+                </div>
+
+                <div class="mytoast-body">
+                    <p>you have been invited to take part in the chess competition that will take part on date. venue will be at venue
+                    </p>
+                   
+                </div>
+            </div>
         </div>
+
+
         </div>
         <div class="modal-footer">
           <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
@@ -194,6 +312,55 @@
         </div>
       </div>
     </div>
+
+    <div class="modal fade" id="contributionModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
+      aria-hidden="true">
+      <div class="modal-dialog" role="document">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="ModalLabel">enter name of club</h5>
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+              <span aria-hidden="true">&times;</span>
+            </button>
+          </div>
+          <div class="modal-body">
+            <div class="form-group">
+                <label for="contribution" class="col-form-label">amount:</label>
+                <input type="number" class="form-control" placeholder="enter amount of your cntribution" id="contribution">
+              </div>
+
+            <button class="btn btn-primary">submit</button>
+          </div>
+          <div class="modal-footer">
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="modal fade" id="eventModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
+    aria-hidden="true">
+    <div class="modal-dialog" role="document">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="ModalLabel">name of event</h5>
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
+        </div>
+        <div class="modal-body">
+          <h4>name: <p class="lead">name of event</p></h4>
+          <h4>date: <p class="lead">date of event</p></h4>
+          <h4>venue: <p class="lead">the venue</p></h4>
+          <h4>additional information: <p class="lead">the additional information</p></h4>
+          <h4>amount contributed: <p class="lead">the amount contributed</p></h4>
+
+        </div>
+        <div class="modal-footer">
+        </div>
+      </div>
+    </div>
+  </div>
+
   </div>
 </div>
 </div> 
