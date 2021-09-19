@@ -222,32 +222,6 @@
                 </div>
             </div>
 
-            <div class="modal fade" id="eventModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
-                aria-hidden="true">
-                <div class="modal-dialog" role="document">
-                    <div class="modal-content">
-                        <div class="modal-header">
-                            <h5 class="modal-title" id="exampleModalLabel">Modal title</h5>
-                            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                                <span aria-hidden="true">&times;</span>
-                            </button>
-                        </div>
-                        <div class="modal-body">
-                            This is where the notification content will appear. It will
-                            contain all the needed content of the notification like venue,
-                            date and max example:<br>
-                            date:<br>
-                            venue:<br>
-                            maximum no. of members to participate<br>
-                        </div>
-                        <div class="modal-footer">
-                            <button type="button" class="btn btn-secondary" data-dismiss="modal">decline</button>
-                            <button type="button" class="btn btn-primary">accept</button>
-                        </div>
-                    </div>
-                </div>
-            </div>
-
             <div class="modal fade" id="internal-eventModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
             aria-hidden="true">
             <div class="modal-dialog" role="document">
@@ -330,6 +304,53 @@
             </div>
           </div>
         </div>
+
+        <div class="modal fade" id="eventModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
+    aria-hidden="true">
+    <div class="modal-dialog" role="document">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="ModalLabel">name of event</h5>
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
+        </div>
+        <div class="modal-body">
+          <h4   style="font-size: 21px;">name: <p class="lead"  style="font-size: 18px;">name of event</p></h4>
+          <h4 style="font-size: 21px;">date: <p class="lead"  style="font-size: 18px;">date of event</p></h4>
+          <h4 style="font-size: 21px;">venue: <p class="lead"  style="font-size: 18px;">the venue</p></h4>
+          <h4 style="font-size: 21px;">additional information: <p class="lead" style="font-size: 18px;">the additional information</p></h4>
+          <h4 style="font-size: 21px;">amount contributed: <p class="lead"  style="font-size: 18px;">the amount contributed</p></h4>
+            <button class="btn btn-success" data-toggle="modal" data-target="#updateModal">update event</button>
+        </div>
+        <div class="modal-footer">
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="modal fade" id="updateModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
+    aria-hidden="true">
+    <div class="modal-dialog" role="document">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="ModalLabel">name of event</h5>
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
+        </div>
+        <div class="modal-body">
+            <input class="form-control" id="name" name="name" placeholder="amount to be divided" type="number" required>
+            <br>
+            <br>
+        <button class="btn btn-success">continue</button>
+        </div>
+        <div class="modal-footer">
+        </div>
+      </div>
+    </div>
+  </div>
+
         </div>
         </div>
     </body>
