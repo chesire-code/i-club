@@ -8,6 +8,7 @@
     <link rel="stylesheet" href="fontawesome.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@500&display=swap" rel="stylesheet">
     <link rel="stylesheet"
         href="https://maxst.icons8.com/vue-static/landings/line-awesome/font-awesome-line-awesome/css/all.min.css">
@@ -38,13 +39,13 @@
                 </li>
                 <li>
                     <a href="notifications.html"><span
-                            class="fas fa-project-diagram"></span><span>Notifications</span></a>
+                            class="fas fa-bell"></span><span>Notifications</span></a>
                 </li>
                 <li>
                     <a href="events.html"><span class="las la-calendar"></span><span>Events</span></a>
                 </li>
                 <li>
-                    <a href="settings.html"><span class="las la-cog"></span><span>Account settings</span></a>
+                    <a href="posts.html"><span class="las la-blog"></span><span>Posts</span></a>
                 </li>
 
             </ul>
@@ -62,8 +63,10 @@
             </h3>
 
             <div class="search-wrapper">
+            <form>
                 <input type="search" placeholder="search">
-                <span class="las la-search"></span>
+                
+            </form>
             </div>
 
             <div class="user-wrapper">
@@ -73,6 +76,26 @@
                 </div>
             </div>
         </header>
+
+        <div class="panel">
+            <form>
+                <textarea placeholder="Whats in your mind today?" rows="2" class="form-control input-lg p-text-area" style="width: 80%; margin-left: 20px;"></textarea>
+            </form>
+            <footer class="panel-footer">
+                <button class="btn btn-success pull-right">Post</button>
+                <ul class="nav nav-pills">
+                    <li>
+                        <a href="#"><i class="fa fa-camera" style="font-size: 25px;"></i></a>
+                    </li>
+                    <li>
+                        <a href="#"><i class=" fa fa-film" style="font-size: 25px;"></i></a>
+                    </li>
+                    <li>
+                        <a href="#"><i class="fa fa-microphone" style="font-size: 25px;"></i></a>
+                    </li>
+                </ul>
+            </footer>
+        </div>
 
         <main>
             <div class="cards mb-3">
