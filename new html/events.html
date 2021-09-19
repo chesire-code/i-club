@@ -8,7 +8,8 @@
         <link rel="stylesheet" href="fontawesome.css">
         <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-        <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@500&display=swap" rel="stylesheet"
+        <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@500&display=swap" rel="stylesheet">
+        <link rel="stylesheet"
             href="https://maxst.icons8.com/vue-static/landings/line-awesome/font-awesome-line-awesome/css/all.min.css">
         <link rel="stylesheet"
             href="https://maxst.icons8.com/vue-static/landings/line-awesome/line-awesome/1.3.0/css/line-awesome.min.css">
@@ -38,14 +39,11 @@
                     </li>
                     <li>
                         <a href="notifications.html"><span
-                                class="fas fa-project-diagram"></span><span>Notifications</span></a>
+                                class="fas fa-bell"></span><span>Notifications</span></a>
                     </li>
                     <li>
                         <a href="events.html" class="active"><span
                                 class="las la-calendar"></span><span>Events</span></a>
-                    </li>
-                    <li>
-                        <a href="settings.html"><span class="las la-cog"></span><span>Account settings</span></a>
                     </li>
 
                 </ul>
@@ -124,9 +122,8 @@
                     event</button>
 
                 <div class="dropdown-menu" aria-labelledby="dropdownMenuLink">
-                    <a class="dropdown-item" style="margin: 10px;" href="#">your own internal event</a>
-                    <a class="dropdown-item" style="margin: 10px;"
-                        href="https://docs.google.com/forms/d/e/1FAIpQLScum6tnxxYw2pLvl6Dc4mH8KnvosIDhcdmeLK7WoBd20XPKaA/viewform?vc=0&c=0&w=1&flr=0&usp=mail_form_link">host
+                    <a class="dropdown-item" style="margin: 10px;" href="#" data-toggle="modal" data-target="#internal-eventModal">your own internal event</a>
+                    <a class="dropdown-item" style="margin: 10px;" data-toggle="modal" data-target="#external-eventModal">host
                         an event with other school</a>
                 </div>
             </div>
@@ -250,6 +247,90 @@
                     </div>
                 </div>
             </div>
+
+            <div class="modal fade" id="internal-eventModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
+            aria-hidden="true">
+            <div class="modal-dialog" role="document">
+              <div class="modal-content">
+                <div class="modal-header">
+                  <h5 class="modal-title" id="ModalLabel">please fill the form</h5>
+                  <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                  </button>
+                </div>
+                <div class="modal-body">
+                  <form>
+                    <div class="form-group">
+                      <label for="event-name" class="col-form-label">name of event:</label>
+                      <input type="text" class="form-control" placeholder="enter a name for your event" id="event-name">
+                    </div>
+                    <div class="form-group">
+                      <label for="event-date" class="col-form-label">date:</label>
+                      <input type="date" class="form-control" placeholder="when is the event" id="event-date">
+                    </div>
+                    <div class="form-group">
+                      <label for="event-venue" class="col-form-label">venue:</label>
+                      <input type="text" class="form-control" placeholder="enter venue" id="event-venue">
+                    </div>
+                   
+                    <button class="btn btn-primary">submit</button>
+                  </form>
+                </div>
+                <div class="modal-footer">
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="modal fade" id="external-eventModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
+          aria-hidden="true">
+          <div class="modal-dialog" role="document">
+            <div class="modal-content">
+              <div class="modal-header">
+                <h5 class="modal-title" id="ModalLabel">please fill the form</h5>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                  <span aria-hidden="true">&times;</span>
+                </button>
+              </div>
+              <div class="modal-body">
+                <form>
+                  <div class="form-group">
+                    <label for="event-name" class="col-form-label">name of event:</label>
+                    <input type="text" class="form-control" placeholder="enter a name for your event" id="event-name">
+                  </div>
+                  <div class="form-group">
+                    <label for="event-date" class="col-form-label">date:</label>
+                    <input type="date" class="form-control" placeholder="when is the event" id="event-date">
+                  </div>
+                  <div class="form-group">
+                    <label for="event-venue" class="col-form-label">venue:</label>
+                    <input type="text" class="form-control" placeholder="enter venue" id="event-venue">
+                  </div>
+
+                  <div class="form-group">
+                    <label for="event-participants" class="col-form-label">maximum participants:</label>
+                    <input type="text" class="form-control" placeholder="max no. of participants from each school" id="event-venue">
+                  </div>
+
+                  <div class="form-group">
+                    <label for="event-additional" class="col-form-label">additional information:</label>
+                    <textarea class="form-control" id="additional" placeholder="Any additional information" rows="4"></textarea>
+                  </div>
+
+                  <div class="form-group">
+                    <label for="event-venue" class="col-form-label">venue:</label>
+                    <input type="text" class="form-control" placeholder="enter venue" id="event-venue">
+                  </div>
+                 
+                  <button class="btn btn-primary">submit</button>
+                </form>
+              </div>
+              <div class="modal-footer">
+              </div>
+            </div>
+          </div>
+        </div>
         </div>
         </div>
     </body>
+</html>
