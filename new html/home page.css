@@ -16,6 +16,13 @@ body {
     font-family: 'Pacifico', cursive;
 }
 
+#first-slide{
+    position: relative;
+    top: -700px;
+    left: -200px;
+    
+}
+
 #second-slide {
     position: relative;
     top: -500px;
@@ -28,8 +35,9 @@ body {
     left: -100px;
 }
 
+
 img {
-    filter: blur(1px);
+    filter: blur(0px);
 }
 
 i {
