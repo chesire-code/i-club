@@ -44,7 +44,7 @@
               <div class="dropdown-menu  bg-light" aria-labelledby="dropdownMenuButton">
                 <a class="nav-link text-dark bg-light" href="#" data-toggle="modal" data-target="#sign-upModal"
                   data-dismiss="#navbarNavDropdown" data-dismiss="#login-Modal">club</a>
-                <a class="nav-link text-dark" href="#" data-toggle="modal" data-target="#sign-upModal"
+                <a class="nav-link text-dark" href="#" data-toggle="modal" data-target="#student-sign-upModal"
                   data-dismiss="#navbarNavDropdown" data-dismiss="#login-Modal">student</a>
               </div>
             </div>
@@ -286,6 +286,47 @@
               <div class="form-group">
                 <label for="confirm" class="col-form-label">confirm password:</label>
                 <input type="password" class="form-control" placeholder="confirm password" id="confirm">
+              </div>
+              <button class="btn btn-primary">submit</button>
+            </form>
+          </div>
+          <div class="modal-footer">
+          </div>
+        </div>
+      </div>
+    </div>
+	
+	<div class="modal fade" id="student-sign-upModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
+      aria-hidden="true">
+      <div class="modal-dialog" role="document">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="ModalLabel">sign up</h5>
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+              <span aria-hidden="true">&times;</span>
+            </button>
+          </div>
+          <div class="modal-body">
+            <form>
+              <div class="form-group">
+                <label for="first-name" class="col-form-label">firstname:</label>
+                <input type="text" class="form-control" placeholder="" id="recipient-name">
+              </div>
+              <div class="form-group">
+                <label for="second-name" class="col-form-label">second-name:</label>
+                <input type="text" class="form-control" placeholder="" id="second-name">
+              </div>
+              <div class="form-group">
+                <label for="recipient-name" class="col-form-label">email:</label>
+                <input type="email" class="form-control" placeholder="enter email address" id="recipient-name">
+              </div>
+              <div class="form-group">
+                <label for="recipient-name" class="col-form-label">create password:</label>
+                <input type="password" class="form-control" placeholder="create a strong password" id="recipient-name">
+              </div>
+              <div class="form-group">
+                <label for="recipient-name" class="col-form-label">confirm password:</label>
+                <input type="password" class="form-control" placeholder="confirm password" id="recipient-name">
               </div>
               <button class="btn btn-primary">submit</button>
             </form>
