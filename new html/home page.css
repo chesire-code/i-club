@@ -1,8 +1,9 @@
 @import url('https://fonts.googleapis.com/css2?family=Pacifico&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Yaldevi:wght@300;400;500;600;700&display=swap');
 body {
     font: 400 15px Lato, sans-serif;
     line-height: 1.8;
-    color: #818181;
+    color: #676f79;
 }
 
 .carousel-caption {
@@ -13,34 +14,37 @@ body {
     width: 100%;
     height: 100%;
     text-align: center;
-    font-family: 'Pacifico', cursive;
+    font-family: 'Yaldevi', sans-serif;
 }
 
-#first-slide{
+#first-slide {
     position: relative;
-    top: -700px;
+    top: -800px;
     left: -200px;
-    
 }
 
 #second-slide {
     position: relative;
-    top: -500px;
+    top: -700px;
     left: -200px;
 }
 
 #third-slide {
     position: relative;
-    top: -500px;
+    top: - 700px;
     left: -100px;
 }
 
-
 img {
-    filter: blur(0px);
+    filter: blur(2px);
+    opacity: 0.9;
 }
 
-i {
+vendor img {
+    opacity: 0.5;
+}
+
+# i {
     font-size: 50px;
 }
 
@@ -187,7 +191,7 @@ h4 {
 
 .navbar {
     margin-bottom: 0;
-    background-color: rgb(0, 0, 0, 0.1);
+    background-color: rgba(0, 221, 203, 0.1);
     z-index: 9999;
     border: 0;
     font-size: 12px !important;
@@ -198,9 +202,11 @@ h4 {
 }
 
 .navbar .navbar-brand {
-    color: rgba(243, 240, 240, 0.993) !important;
-    font-size: large;
+    color: rgba(255, 255, 255, 0.993) !important;
+    font-size: x-large;
     margin-right: 30px;
+    margin-top: 20px;
+    font-family: 'Yaldevi', sans-serif;
 }
 
 #logo {
@@ -222,13 +228,20 @@ h4 {
 }
 
 #navbar {
-    background: rgb(0, 0, 0, 0.7);
+    background: rgba(0, 183, 255, 0.7);
+    margin-bottom: 10px;
 }
 
 footer .glyphicon {
     font-size: 20px;
     margin-bottom: 20px;
     color: #f4511e;
+}
+
+#vision p,
+#vision h2,
+#vision h4 {
+    color: rgb(108, 210, 250);
 }
 
 .slideanim {
@@ -248,12 +261,13 @@ footer .glyphicon {
     border-radius: 40px;
     outline: none;
     border: none;
-    color: #ffffff;
+    color: #009cf7;
     width: 300px;
     margin-left: 400px;
     transition-property: background-color ease;
-    transition-duration: 0.7s;
-    background: black;
+    transition-duration: 0.3s;
+    background: rgb(255, 249, 249);
+    border: 2px solid #009cf7;
 }
 
 #about-content {
@@ -261,7 +275,8 @@ footer .glyphicon {
 }
 
 #join-button:hover {
-    background-color: rgba(0, 128, 0, 0.562);
+    background-color: #009cf7;
+    color: rgb(255, 255, 255);
 }
 
 @keyframes slide {
