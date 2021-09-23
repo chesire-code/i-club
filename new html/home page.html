@@ -6,6 +6,7 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="bootstrap.css">
+    <link rel="stylesheet" href="style.css">
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
     <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet" type="text/css">
@@ -22,18 +23,19 @@
         href="https://maxst.icons8.com/vue-static/landings/line-awesome/font-awesome-line-awesome/css/all.min.css">
     <link rel="stylesheet"
         href="https://maxst.icons8.com/vue-static/landings/line-awesome/line-awesome/1.3.0/css/line-awesome.min.css">
+
   </head>
 
   <body id="myPage" data-spy="scroll" data-target=".navbar" data-offset="60">
 
     <nav class="navbar navbar-expand-lg navbar-light bg-light text-dark" id="navbar">
-      <a class="navbar-brand bg-dark text-light" href="#">interclub</a>
+      <a class="navbar-brand bg-primary text-light ml-2" style="border-radius: 2px;" href="#">interclub</a>
       <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown"
         aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
       </button>
       <div class="collapse navbar-collapse text-dark" id="navbarNavDropdown">
-        <ul class="navbar-nav ml-auto">
+        <ul class="navbar-nav ml-auto" style="position:relative; left: 950px;">
          
           <li class="nav-item">
             <div class="dropdown">
@@ -91,7 +93,7 @@
           </div>
 
           <div class="item">
-            <img class="img-fluid" src="https://images.pexels.com/photos/106344/pexels-photo-106344.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500" height="800" width="100%" alt="Third slide">
+            <img class="img-fluid" src="https://images.pexels.com/photos/5324922/pexels-photo-5324922.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500" height="500" width="100%" alt="Third slide">
             <div class="carousel-caption" id="third-slide">
               <h3 class="ml-10"style="font-size: 40px; marghin-leftr: 10px;">create an account and start progressing with our website, <br>your club will progress financially with success</h3>
                <button class="btn btn-success" data-toggle="modal" data-target="#sign-upModal"
@@ -150,39 +152,55 @@
   <h2>SERVICES</h2>
   <h4>What we offer</h4>
   <br>
-  <div class="row slideanim">
-    <div class="col-sm-4">
-      <i class="material-icons" style="font-size: 50px;" >chat</i>
-      <h4>Chat wall</h4>
-      <p>A chst wall for your club for communication</p>
-    </div>
-    <div class="col-sm-4">
-      <i class="material-icons" style="font-size: 50px;" >event</i>
-      <h4>events invites</h4>
-      <p>invite clubs for events with a click of a button</p>
-    </div>
-    <div class="col-sm-4">
-     <i class="las la-users"></i>
-      <h4>interaction</h4>
-      <p>interact with other clubs in the country</p>
-    </div>
-  </div>
-  <br><br>
-  <div class="row slideanim">
-    <div class="col-sm-4">
-     <i class='fas fa-address-card'></i>
-      <p>club management</p>
-    </div>
-  </div>
-</div>
 
-    <div class="container-fluid bg-grey">
+<section id="featured-services" class="featured-services">
+      <div class="container" data-aos="fade-up">
+
+        <div class="row">
+          <div class="col-md-6 col-lg-3 d-flex align-items-stretch mb-5 mb-lg-0">
+            <div class="icon-box" data-aos="fade-up" data-aos-delay="100">
+              <div class="icon"><i class="material-icons" style="font-size: 50px;" >chat</i></div>
+              <h4 class="title"><a href="">chat wall</a></h4>
+              <p class="description">A chat wall for you to communicate online</p>
+            </div>
+          </div>
+
+          <div class="col-md-6 col-lg-3 d-flex align-items-stretch mb-5 mb-lg-0">
+            <div class="icon-box" data-aos="fade-up" data-aos-delay="200">
+              <div class="icon"><i class="material-icons" style="font-size: 50px;" >event</i></div>
+              <h4 class="title"><a href="">events invites</a></h4>
+              <p class="description">Send invites to other clubs instantly with ease</p>
+            </div>
+          </div>
+
+          <div class="col-md-6 col-lg-3 d-flex align-items-stretch mb-5 mb-lg-0">
+            <div class="icon-box" data-aos="fade-up" data-aos-delay="300">
+              <div class="icon"><i class="las la-users"></i></div>
+              <h4 class="title"><a href="">Interaction</a></h4>
+              <p class="description">share ideas to clubs countrywide ina click</p>
+            </div>
+          </div>
+
+          <div class="col-md-6 col-lg-3 d-flex align-items-stretch mb-5 mb-lg-0">
+            <div class="icon-box" data-aos="fade-up" data-aos-delay="400">
+              <div class="icon"><i class="las la-tasks"></i></div>
+              <h4 class="title"><a href="">Club management</a></h4>
+              <p class="description">Know your members and view your club's progress easily</p>
+            </div>
+          </div>
+
+        </div>
+
+      </div>
+    </section>
+
+    <div class="container bg-grey" style="margin-bottom: -400px; height: 980px; width: 95%; background: black;" id="vision">
       <div class="row">
-
-        <div class="col">
-          <h2>Our Values</h2><br>
+       <img src="https://images.pexels.com/photos/1546901/pexels-photo-1546901.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500" class="img-fluid" height="700" width="100%" style="margin-left: 20px;"/> 
+        <div class="col" style="position:relative; top: -550px; color: blue;">
+          <h2 style="">Our Values</h2><br>
           <h4><strong>MISSION:</strong>
-            <p class="lead">To see clubs making an positive impact in our society</p>
+            <p class="lead" style="">To see clubs making an positive impact in our society</p>
           </h4><br>
           <h4><strong>VISION: </strong>
             <p class="lead">To make clubs in schools more active as well as very beneficial both to the school
@@ -198,33 +216,73 @@
 
 
     <!-- Container (Contact Section) -->
-    <div id="contact" class="container-fluid bg-grey">
-      <h2 class="text-center">CONTACT</h2>
-      <div class="row">
-        <div class="col-sm-5">
-          <p>Contact us and we'll get back to you within 24 hours.</p>
-          <p><span class="glyphicon glyphicon-map-marker"></span>Eldoret, Kernya</p>
-          <p><span class="glyphicon glyphicon-phone"></span> +254 123456</p>
-          <p><span class="glyphicon glyphicon-envelope"></span> myemail@something.com</p>
+    <section id="contact" class="contact">
+      <div class="container" data-aos="fade-up" style="background: white; margin-top: 50px;">
+
+        <div class="section-title">
+          <h2>Contact</h2>
+          <h3><span>Contact Us</span></h3>
+          <p>Reach out to us now through:</p>
         </div>
-        <div class="col-sm-7 slideanim">
-          <div class="row">
-            <div class="col-sm-6 form-group">
-              <input class="form-control" id="name" name="name" placeholder="Name" type="text" required>
-            </div>
-            <div class="col-sm-6 form-group">
-              <input class="form-control" id="email" name="email" placeholder="Email" type="email" required>
+
+        <div class="row" data-aos="fade-up" data-aos-delay="100">
+          <div class="col-lg-5">
+            <div class="info-box mb-4">
+              <i class="las la-map-marker-alt"></i>
+              <h3>Our Address</h3>
+              <p>A108 Adam Street, New York, NY 535022</p>
             </div>
           </div>
-          <textarea class="form-control" id="comments" name="comments" placeholder="Comment" rows="5"></textarea><br>
-          <div class="row">
-            <div class="col-sm-12 form-group">
-              <button class="btn btn-default pull-right" type="submit">Send</button>
+
+          <div class="col-lg-3 col-md-6">
+            <div class="info-box  mb-4">
+              <i class="las la-envelope"></i>
+              <h3>Email Us</h3>
+              <p>contact@example.com</p>
             </div>
           </div>
+
+          <div class="col-lg-3 col-md-6">
+            <div class="info-box  mb-4">
+              <i class="las la-phone-volume"></i>
+              <h3>Call Us</h3>
+              <p>+1 5589 55488 55</p>
+            </div>
+          </div>
+
         </div>
+
+        <div class="row" data-aos="fade-up" data-aos-delay="100">
+
+          <div class="col-lg-6" style="margin-left: 200px;">
+            <form action="forms/contact.php" method="post" role="form" class="php-email-form">
+              <div class="row">
+                <div class="col form-group">
+                  <input type="text" name="name" class="form-control" id="name" placeholder="Your Name" required>
+                </div>
+                <div class="col form-group">
+                  <input type="email" class="form-control" name="email" id="email" placeholder="Your Email" required>
+                </div>
+              </div>
+              <div class="form-group">
+                <input type="text" class="form-control" name="subject" id="subject" placeholder="Subject" required>
+              </div>
+              <div class="form-group">
+                <textarea class="form-control" name="message" rows="5" placeholder="Message" required></textarea>
+              </div>
+              <div class="my-3">
+                <div class="loading">Loading</div>
+                <div class="error-message"></div>
+                <div class="sent-message">Your message has been sent. Thank you!</div>
+              </div>
+              <div class="text-center"><button type="submit">Send Message</button></div>
+            </form>
+          </div>
+
+        </div>
+
       </div>
-    </div>
+    </section>
 
     <div class="modal fade" id="login-Modal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
       aria-hidden="true">
