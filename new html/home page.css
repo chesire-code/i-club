@@ -37,14 +37,13 @@ body {
 
 img {
     filter: blur(2px);
-    opacity: 0.9;
 }
 
-vendor img {
-    opacity: 0.5;
+#vision img {
+    opacity: 0.3;
 }
 
-# i {
+i {
     font-size: 50px;
 }
 
@@ -120,15 +119,15 @@ h4 {
 .carousel-control.right,
 .carousel-control.left {
     background-image: none;
-    color: #f4511e;
+    color: #01c4ff;
 }
 
 .carousel-indicators li {
-    border-color: #f4511e;
+    border-color: #01c4ff;
 }
 
 .carousel-indicators li.active {
-    background-color: #f4511e;
+    background-color: #01c4ff;
 }
 
 .item h4 {
@@ -186,6 +185,71 @@ h4 {
 .panel-footer .btn {
     margin: 15px 0;
     background-color: #f4511e;
+    color: #fff;
+}
+
+.featured-services .icon-box {
+    padding: 30px;
+    position: relative;
+    overflow: hidden;
+    background: #fff;
+    box-shadow: 0 0 29px 0 rgba(68, 88, 144, 0.12);
+    transition: all 0.3s ease-in-out;
+    border-radius: 8px;
+    z-index: 1;
+}
+
+.featured-services .icon-box::before {
+    content: "";
+    position: absolute;
+    background: #cbe0fb;
+    right: 0;
+    left: 0;
+    bottom: 0;
+    top: 100%;
+    transition: all 0.3s;
+    z-index: -1;
+}
+
+.featured-services .icon-box:hover::before {
+    background: #106eea;
+    top: 0;
+    border-radius: 0px;
+}
+
+.featured-services .icon {
+    margin-bottom: 15px;
+}
+
+.featured-services .icon i {
+    font-size: 48px;
+    line-height: 1;
+    color: #106eea;
+    transition: all 0.3s ease-in-out;
+}
+
+.featured-services .title {
+    font-weight: 700;
+    margin-bottom: 15px;
+    font-size: 18px;
+}
+
+.featured-services .title a {
+    color: #111;
+}
+
+.featured-services .description {
+    font-size: 15px;
+    line-height: 28px;
+    margin-bottom: 0;
+}
+
+.featured-services .icon-box:hover .title a,
+.featured-services .icon-box:hover .description {
+    color: #fff;
+}
+
+.featured-services .icon-box:hover .icon i {
     color: #fff;
 }
 
